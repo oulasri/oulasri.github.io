@@ -1,0 +1,115 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  padding-bottom: 0 !important;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0px 10px rgba(128, 128, 128, 0.25);
+}
+
+.name {
+  color: 	#8FBC8F !important;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.name:hover, .name:visited, .name:link, .name:active
+{
+    text-decoration: none;
+}
+
+.fa {
+  color: 	#8FBC8F !important;
+  padding-right: 10px;
+
+}
+
+.fa:hover, .fa:visited, .fa:link, .fa:active
+{
+    text-decoration: none;
+}
+
+.content {
+  max-width: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 80px 20px 50px 20px;
+}
+
+.article {
+  margin-top: 50px;
+}
+
+.article-title {
+  color: 	#8FBC8F !important;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.article-section {
+  font-size: 30px;
+  color: #666;
+  margin-top: 50px;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.article-paragraph {
+  font-size: 21px;
+  color: #666;
+  margin-top: 50px;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.article-img {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.article-ref {
+  color: 	#8FBC8F !important;
+}
+
+.article-title:hover, .article-title:visited, .article-title:link, .article-title:active
+{
+    text-decoration: none;
+}
+
+.article-time {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  display: block;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.share-buttons {
+  padding-top: 40px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: relative;
+  padding: 10px 20px;
+  display: block;
+  text-align: left;
+  font-size: 80%;
+  color: #dfdfdf;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}

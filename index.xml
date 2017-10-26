@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Rachid Oulasri's Blog</title>
+    <link>https://oulasri.github.io/</link>
+    <description>Article on Rachid Oulasri's Blog</description>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://oulasri.github.io/index.xml" rel="self" type="application/rss+xml"/>
+    <item>
+
+    </item>
+  </channel>
+</rss>
