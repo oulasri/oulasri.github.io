@@ -1,10 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <title>Rachid Oulasri</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Content-Type" content="UTF-8">
+    <meta name="Content-Language" content="fr">
+    <meta name="Subject" content="developer">
+    <meta name="Copyright" content="rachid oulasri 2017">
+    <meta name="Author" content="rachid oulasri">
+    <meta name="Identifier-Url" content="oulasri.github.io">
+
+    <meta property="og:title" content="Rachid Oulasri"/>
+    <meta property="og:Section" content="website"/>
+    <meta property="og:url" content="https://oulasri.github.io/"/>
+    <meta property="og:site_name" content="Rachid&#39;s Blog"/>
+    <meta property="og:description" content="Article sur les expériences de dévelopement de Rachid Oulasri"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../style.css">
@@ -50,12 +62,12 @@
 
         <h2 class="article-section">Elm, c'est quoi?</h2>
         Dans un premier temps Paul Dijou nous définit ce qu’est Elm. C’est un langage de programmation fonctionnel, fortement typé, immutable, pur et qui compile vers JavaScript. Voici un exemple de code Elm compilé en JavaScript.
-        <img src="./image/exemple.jpeg" class="article-img" width="600px"/>
+        <img src="./image/exemple.jpeg" class="article-img" width="600"/>
 
         <h1 class="article-paragraph">Programmation fonctionelle</h2>
         La programmation fonctionnelle est un style de programmation qui prends comme concepts fondamentaux les notions de valeur, de fonction et l’application de ces fonctions à des valeurs. Le terme de fonction est à prendre ici au sens mathématique du terme. Elm est un langage de programmation fortement typé dont les variables ne peuvent être null ou undefined. À l’image de TypeScript, le code écrit en Elm est compilé en Javascript, pouvant alors être interprété par n’importe quel navigateur web. Le premier point que soulève Paul Dijou est que ce langage offre une approche pure et immutable.
-        </br>
-        </br>
+        <br>
+        <br>
         Effectivement, Elm est un langage qui se fonde sur les notions d’immutabilité. Ce concept vise à empêcher le changement d’état des variables dans l’exécution du programme, le contenu d’une variable ne peut pas être changé après son assignement.
         L’approche pure est un des fondements du paradigme de programmation fonctionnelle. Une fonction est pure lorsque le résultat ne dépend que de ses arguments et non d’un état externe; et qui n’a pas d’effet de bord, c’est-à-dire qu’elle retourne une valeur en sortie et ne change pas l’état d’une variable externe à la fonction.
         <img src="./image/function.png" class="article-img"/>
@@ -63,29 +75,29 @@
 
         <h1 class="article-paragraph">Architecture Elm</h2>
         Du fait de son architecture, Elm a été pensé pour développer en front-end. C’est pourquoi son concepteur incite une façon de faire pour structurer son code. Cette architecture s’approche du modèle MVC et propose: un modèle qui contient l’état de l’application, une vue qui représente l’application en fonction de son modèle et une fonction d’update qui va réaliser les changements sur le modèle en fonction des messages qu’il reçoit (retour de l’utilisateur, API, serveur, …)
-        <img src="./image/mvu.jpg" class="article-img" width="700px"/>
+        <img src="./image/mvu.jpg" class="article-img" width="650"/>
 
         <h1 class="article-paragraph">No runtime error</h2>
-        Grâce à ces différents aspects, le concepteur de ce langage <a href="https://twitter.com/czaplic" class="article-ref">Evan Czaplicki </a> a pu concevoir un compilateur qui fournit des messages d’une très grande qualité. En plus de nous décrire clairement le message d’erreur, le compilateur fera toujours de son mieux pour nous proposer une modification ou un lien pour nous aider à résoudre l’erreur. Mais le plus important est que selon la documentation officielle, le compilateur Elm arrive à détecter les fragments susceptibles de fournir une erreur à l’exécution.
+        Grâce à ces différents aspects, le concepteur de ce langage <a href="https://twitter.com/czaplic" class="article-ref">Evan Czaplicki</a> a pu concevoir un compilateur qui fournit des messages d’une très grande qualité. En plus de nous décrire clairement le message d’erreur, le compilateur fera toujours de son mieux pour nous proposer une modification ou un lien pour nous aider à résoudre l’erreur. Mais le plus important est que selon la documentation officielle, le compilateur Elm arrive à détecter les fragments susceptibles de fournir une erreur à l’exécution.
         C’est donc le deuxième point qui est soulevé par le speaker. Ce langage est censé éviter toute erreur à l’exécution et fournir de plus grandes performances. Après l’avoir utilisé pendant plus d’un an en production, Paul Dijou nous fait un retour d’expérience sur cet aspect.
-        </br>
-        </br>
+        <br>
+        <br>
         Selon la documentation officielle, le code compilé en JavaScript par Elm ne générera jamais d’erreur d’exécution. Cette assertion est confirmée par le speaker à 99% du temps. En effet, une fois que le code compile, on est garanti qu’il n’y aura pas d’erreur imprévue lors de l’exécution du programme contrairement à du code en JavaScript. Et cela parce que le langage nous oblige à prendre en compte tous les cas d’utilisation.
         Néanmoins, ce langage de programmation n’est pas complet. Plusieurs fonctionnalités existantes en JavaScript ne sont pas encore implémentées sur Elm. C’est pourquoi il existe plusieurs manières de communiquer avec JavaScript afin de pallier ce manque. Ce procédé permet alors de compléter les fonctionnalités de notre application, mais nous ouvre la porte à de potentielles erreurs d’exécution.
 
         <h2 class="article-section">Bons et mauvais points</h2>
         Le speaker a fait le pari d’utiliser cette nouvelle technologie en cours de développement pour des applications en production. Pour terminer cette conférence, il nous fait un bilan des bons et mauvais points qu’il a rencontré durant cette année d’utilisation.
-        </br>
-        </br>
+        <br>
+        <br>
         Le principal avantage d’utiliser Elm est que lorsque le code compile, nous n’aurons pas d’erreur d’exécution. Pour arriver à ce résultat, le compilateur nous oblige à prendre en compte toutes les possibilités. C’est pourquoi nous sommes obligés d’écrire beaucoup de ligne de code. Selon le speaker ce langage est très verbeux, mais de par sa facilité d’utilisation, la maintenance et le refactoring du code sont simples.
-        </br>
-        </br>
+        <br>
+        <br>
         Le deuxième point est que la communauté qui entoure cette nouvelle technologie est très enthousiaste et participe beaucoup à la création d’outils aidant le développement d’applications web Elm. Néanmoins, le créateur de ce langage a de très bonne idée mais il les développe seul. Pour certains le projet n’avance pas assez vite, et c’est pourquoi  quelques membres importants de cette communauté ayant créé des outils populaires ont arrêté de les maintenir.
 
         <h2 class="article-section">Conclusion</h2>
         Comme l’a démontrée cette conférence; à un stade aussi jeune de son développement, le langage est déjà utilisable en production. Cela présage du meilleur quand on sait que des améliorations sont à venir. Le retour d’expérience de Paul Dijou paraît plutôt enthousiaste. De plus, Facebook a récemment fait le choix d’utiliser cette technologie dans le développement de l’application « messenger », ce qui prouve sa fiabilité.
-        </br>
-        </br>
+        <br>
+        <br>
         Pour conclure, il faudra attendre que ce projet soit plus mature pour pouvoir l’exploiter pleinement. La place que prend aujourd’hui TypeScript sur le développement d’applications web pourra aussi freiner la progression d’Elm. Affaire à suivre…
         <div class="share-buttons">
           <table>
