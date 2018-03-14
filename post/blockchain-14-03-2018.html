@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Rachid Oulasri - Blockchain</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Content-Type" content="UTF-8">
+    <meta name="Content-Language" content="fr">
+    <meta name="Subject" content="developer">
+    <meta name="Copyright" content="rachid oulasri 2017">
+    <meta name="Author" content="rachid oulasri">
+    <meta name="Identifier-Url" content="oulasri.github.io">
+
+    <meta property="og:title" content="Rachid Oulasri"/>
+    <meta property="og:Section" content="website"/>
+    <meta property="og:url" content="https://oulasri.github.io/"/>
+    <meta property="og:site_name" content="Rachid&#39;s Blog"/>
+    <meta property="og:description" content="Blockchain - Article sur les expériences de dévelopement de Rachid Oulasri"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108684220-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108684220-1');
+    </script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10&appId=1939842289672141';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header class="header">
+      <nav class="navbar navbar-light">
+        <span class="navbar-text">
+          <a href="/" class="name">~/Rachid Oulasri</a><a class="name">/Blockchain</a>
+        </span>
+
+        <span class="navbar-text">
+          <a href="https://github.com/oulasri" class="fa fa-github"></a>
+          <a href="https://twitter.com/ROulasri" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/in/rachid-oulasri/" class="fa fa-linkedin"></a>
+        </span>
+      </nav>
+    </header>
+    <div class="content">
+      <article class="article">
+        <h2 class="article-title"><a href="/post/blockchain-14_03_2018.html" class="article-title">Blockchain 3.0</a></h2>
+        <div class="article-time">Mercredi, Mars 14, 2018</div>
+        La technologie far de ces dernières années est bien la blockchain. Certains la décrivent comme une avancée aussi importante que l’était Internet à la fin du XXe siècle. Si vous n’en avez jamais entendu parler, vous avez probablement dû entendre parler de cryptomonnaie comme par exemple le Bitcoin. L’objectif de cet article est de visualiser l’avancer technologique que procure la Blockchain, puis de s’intéresser aux nouvelles générations de cryptomonnaie. Dix années après l’apparition de la première blockchain mondialement connue, le Bitcoin, nous allons voir quelles sont les avancées dans ce domaine.
+
+        <h2 class="article-section">Histoire de la blockchain</h2>
+        Afin d’introduire l’idée de la blockchain nous avons besoin de nous situer dans le contexte de la crise bancaire et financière de l’automne 2008. Cette crise a introduit un problème de confiance vis-à-vis des intermédiaires, plus précisement des institutions bancaires. Ces intermédiaires dictent leurs lois, abusent parfois de leurs autorités et le plus important, concentrent les risques.
+        <br>
+        <br>
+        C’est dans ce climat de méfiance que sont nées les cryptomonnaies. Il est impossible de présenter les blockchains sans introduire ce concept. La première et de loin la plus célèbre est le Bitcoin. Elle a été créée en 2008 par un certain Satoshi Nakamoto et repose sur plusieurs principes. L’idée de base était de créer une monnaie d’échange entre utilisateurs qui se passent des institutions bancaires afin de transférer des biens et des services de façon plus libre et indépendante.
+        <br>
+        <br>
+        Néanmoins ce principe introduit plusieurs problématiques :
+        <ul>
+          <li>L’échange d’argent se fait d’utilisateurs à utilisateurs,</li>
+          <li>Il faut empêcher que l’on attribue deux fois le même bitcoin,</li>
+          <li>Et il faut garantir que la monnaie se gère sans autorité supérieure et/ou centrale.</li>
+        </ul>
+        Pour répondre à ces problématiques très brièvement, le Bitcoin utilise la technologie de la blockchain et plus précisément la combinaison de trois innovations : les réseaux <b>Peer-to-peer</b>, la <b>cryptographie asymétrique</b> et <b>la preuve de travail</b>.
+        <br>
+        <br>
+        <h1 class="article-paragraph">Les réseaux peer-to-peer</h2>
+        Le réseau pair à pair est un protocole de transfert de données proche du modèle client-serveur mais où chaque client est lui-même un serveur. De cette manière un utilisateur du réseau (un noeud) met à la disposition des autres noeud un fichier. Ce fichier est copié par tous les noeuds de proche en proche jusqu’à ce que l’ensemble du réseau en possède une copie. Dans le cas du Bitcoin, les utilisateurs échangent un registre et à chaque fois qu’un noeud apporte un changement à ce registre tous les noeuds du réseau mettent à jours le leurs.
+        <img src="./image/peer-to-peer.png" class="article-img" style="width:100%; height:100%;"/>
+
+
+        <h1 class="article-paragraph">La cryptographie asymétrique</h2>
+        La deuxième problématique est d’éviter qu’un même bitcoin soit attribué deux fois. Pour éviter cela, le Bitcoin utilise la cryptographie asymétrique. Pour faire simple, un noeud génère deux clés: une privée et une publique. Dans le cas courant un utilisateur transmet la clé publique à tous utilisateurs du réseau, lorsqu’un second utilisateur chiffre un message, seul le détenteur de la clé privée pourra lire ce message.
+        <img src="./image/crypto-asymetrique.png" class="article-img" style="width:60%;"/>
+        Dans le cas du Bitcoin, c’est l’inverse qui se passe. Un utilisateur utilise sa clé privée pour signer une transaction et diffuse sa clé publique à tous les utilisateurs du réseau. Le but ici n’est pas de crypter le message mais d’être sûr qu’une transaction est faite par le bon utilisateur, celui qui possède le bitcoin à transférer. Maintenant que les transactions sont sécurisées comment peut-on savoir que l’émetteur possède réellement le bitcoin à transférer.
+
+        <h1 class="article-paragraph">Proof-of-work (Preuve de travail)</h2>
+
+        Pour éviter ce genre de fraude et s’assurer que la monnaie se gère sans autorité supérieure et/ou centrale, il va falloir trouver une astuce et mettre tous les noeuds du réseau d’accord sur l’ordre des transactions. Si l’ordre des transactions est la même pour tous les noeuds du réseau, on peut remonter dans les blocs et savoir si un émetteur possède réellement un bitcoin. Ce qui nous amène à introduire le concept de la preuve de travail (Proof-of-Work en anglais).         <br><br>
+        Toutes les transactions sont groupées dans des blocs et chaque bloc référence le bloc précédent. De cette manière il n’y a qu’une seule chaine de blocks qui est répliquée sur tous les noeuds du réseau. Nous pouvons alors affirmer qu’une transaction qui se trouve dans un bloc sera obligatoirement postérieur aux transactions présente sur tous les blocs précédent. Les transactions sont donc ordonné selon une suite chronologique.
+        <img src="./image/blockchain.jpeg" class="article-img" style="width:100%;"/>
+        La question maintenant est de savoir comment créer de nouveau blocks contenant les nouvelles transactions. Avant de finir dans un block, les transactions ne sont pas encore confirmées et sont dites en attente. Pour créer un nouveau block tous les noeuds du réseau font appel au minage.
+
+
+        <h1 class="article-paragraph">Le minage</h2>
+        Le concept du minage est simple. Chaque block est identifié par une clé de hachage, et l’objectif des noeuds du réseau qui minent est de créer un identifiant (une clé de hachage) valide pour le nouveau block. Les transactions en attente seront alors regroupées dans le nouveau block et disponible dans la blockchain.
+        <img src="./image/minage.jpeg" class="article-img" style="width:100%;"/>
+
+        Afin de trouver un identifiant valide, les noeuds du réseaux vont faire appel à une fonction de hachage. Grâce à cette fonction, les noeuds vont hacher l’identifiant du block précédent, les identifiants des transactions du block que l’on essaie de former et une chaîne de caractères aléatoire. Un noeud pourra créer le nouveau block si le hash qu’il vient de créer est valide; c’est-à-dire si il comporte un grand nombre de zéro dans ses premiers chiffres. Le noeuds mets alors à jours la blockchain et propage cette dernière de proche en proche dans le réseau Peer-to- peer.
+        <br><br>
+        Sachant que le hash est généré aléatoirement, un noeud a besoin de beaucoup de tentatives pour en trouver un qui soit valide. Ces tentatives génèrent beaucoup de travail d’où le nom preuve de travail. Dans l’exemple du bitcoin, la probabilité de trouver un noeud valide est de 9,18x10^-22 et un block est créé toute les 10 minutes.
+        <br><br>
+        De cette manière les transactions sont vérifiées et stockés dans des blocks et si quelqu’un de mal intentionné veut changer une transaction dans un block; il doit changer l’identifiant de ce block (sa clé de hachage). Sachant que chaque block référence le block précédent, il doit aussi changer cette référence et donc l’identifiant des block suivant et ainsi de suite. Sachant que trouver un seul identifiant de block est extrêmement couteux, frauder le système est impossible.
+
+        <br>
+        <br>
+
+        Les réseaux peer-to-peer, la cryptographie asymétrique et la preuve de travail (PoW) qui permet de trouver un consensus distribué sont les trois solutions qui constituent la blockchain.
+
+
+        <h2 class="article-section">Prise de recul</h2>
+        Aujourd’hui les cryptomonnaies pèsent des centaines de milliards de dollars et prouvent au quotidien la fiabilité de la blockchain. Cette technologie est en application dans le domaine de la finance, il est temps de voir si elle est assez mature pour s’étendre à d’autres types d’informations.
+        <br>
+        <br>
+        La blockchain s’appuie sur trois idées fondamentales décrites dans le chapitre précédent :
+        <ul>
+          <li>La « désintermédiation » : nous pouvons nous passer des intermédiaires de confiance grâce au réseau peer-to-peer ce qui entraine une diminution des coûts,</li>
+          <li>La traçabilité : l’utilisation d’un registre permet de rendre traçable chaque transaction car elles sont publiques. Cette traçabilité nous apporte une preuve numérique d’existence non effaçable. Néanmoins, malgré le fait que les transactions soient publiques, elles sont signées avec les clés de hachage privé des utilisateurs. Ils sont alors anonymes,</li>
+          <li>Un Consensus distribué : permet la conservation du registre par tous les utilisateurs et la vérification permanente des transactions, qui a pour effet de faciliter le travail ensemble et d’augmenter la sécurité.</li>
+        </ul>
+
+        C’est dans ce contexte que certaines personnes se sont posé une question simple mais cruciale. Est-il possible d’exécuter un code? Par exemple, de soumettre un paiement à une condition. Le bitcoin est une excellente innovation, mais est-il possible d’effectuer un virement à une certaine date par exemple. C’est de cette idée qu’est né le contrat intelligent (smart contract en anglais). C’est ce que je considère comme étant la deuxième génération de blockchain et de cryptomonnaie. Cette deuxième génération a été introduite par la technologie Ethereum.
+
+        <br><br>
+        Un smart contract, c’est la distribution de petits programmes avec une mini-base de données sur la blockchain. De cette manière il ne peut pas y avoir de litige, l’exécution du programme est garantie par la blockchain. Actuellement il est existe plusieurs applications qui se basent sur un smart contract. Ces applications sont appelées les dApps pour « decentralized application ». L’application ne s’exécute pas sur notre appareil mais sur la blockchain.
+        <br><br>
+        Néanmoins les dApps regroupent un grand nombre de contraintes. La première et la plus dangereuse selon moi c’est qu’un code déployé sur une blockchain est immutable. C’est-à-dire qu’il n’est pas modifiable. Lorsqu’il est déployé sûr la blockchain il y sera présent pour toujours. Au vue de la maturité de la technologie, il est quasiment sur que du code déployer sur une blockchain contient du bug. Pour corriger ces bugs il faut déployer un nouveau contrat sur la blockchain et récupérer les informations du contrat précédent. Il existe plusieurs scandales, ou des hacker ont détourner des montants énorme (plusieurs millions de dollars) sur des dApps en exploitant du code beugué.
+        <br><br>
+        Une autre contrainte, est que les réponses sont très lentes. Lorsque l’on appelle une méthode d’un contrat via une transaction, il faut attendre que cette dernière soit vérifiée, donc qu’un bloque soit miné afin de pouvoir la stocker. Dans l’exemple de Ethereum, un bloque est miné tout les minutes.
+
+        <h2 class="article-section">Troisième génération</h2>
+        Les limites des blockchains de première et deuxième génération ont introduit l’arrivée de blockchain de troisième génération. Elles ont pour objectif de répondre aux problèmes rencontrés dans les versions précédentes tout en introduisant de nouveau points innovants. Nous allons nous concentrer sur la technologie Cardano qui, selon moi, propose un tournant majeur dans le monde des cryptomonnaies.
+        <br><br>
+        Tout d’abord, Cardano a était lancée en septembre 2017 et se présente comme la blockchain de troisième génération. Cette technologie reprend les idées de base du Bitcoin et de l’Ethereum, et prétend répondre aux problème vu précédemment. Selon ses créateurs, elle offrirait une solution scalable, interopérable et durable.
+
+        <h1 class="article-paragraph">Scalabilité</h2>
+        La scalabilité entraine trois problématique :
+        <ul>
+          <li> Le nombre de transactions par seconde,</li>
+          <li>Sachant que ces transactions manipulent des données, nous rencontrons un questionnement sur la fiabilité du réseau,</li>
+          <li>Etant donné que chaque transaction est stockée sur la blockchain, celle-ci grossit de jour en jour. Actuellement la blockchain du bitcoin pèse plus de 150 Go. Nous allons donc rencontrer un problème de stockage de data car chaque noeud du réseau doit stocker le registre en intégralité afin de vérifier les transactions.</li>
+        </ul>
+
+        Nous avons vu précédemment que la première génération de blockchain (Bitcoin) permettait de trouver un consensus distribué grâce à la preuve de travail (PoW). Pour répondre au problème du nombre de transactions par seconde, Cardano utilise lui un algorithme de Proof-of-Stake (PoS) afin de parvenir à un consensus. La preuve de travail, pour le minage, consiste à effectuer des calculs mathématiques afin de créer des nouveaux blocs dans la chaine ou de valider des transactions. Le problème vu précédemment, est que la création de bloc était très lente (par exemple 10min pour le bitcoin), et donc la vérification de transaction de même. Sans rentrer dans les détails, le protocole utilisé par Cardano permet de générer des blocs et vérifier les transactions de manière beaucoup plus rapide.
+        <br><br>
+        Ensuite, afin de réussir à effectuer des milliers de transactions par seconde, il est impossible de maintenir une topologie de réseau homogène. Tous les noeuds du réseau ne peuvent pas non plus étudier chaque transaction car ils n’auront pas une fiabilité du réseau suffisante. Cardano utilise l’architecture réseau <a href="http://irati.eu/the-recursive-internetwork-architecture/" class="article-ref">RINA (RecursiveInternetWork Architecture)</a> afin de pallier à ce problème de support réseau.
+
+        <br><br>
+        Pour finir, tous les utilisateurs n’ont pas nécessairement besoin de toutes les données pour vérifier leurs transactions tout en ayant un niveau de sécurité élevé. Cardano n’a pas encore implémenté de solution pour réduire la taille de la blockchain, mais une réponse à ce problème est en cours de développement et serait disponible au cours de l’année 2018. Cette réponse consiste en l’union de plusieurs méthodes : l’élagage, l’abonnement, la compression et la partition de données. Un noeud du réseau pourra alors manipuler une version « light » de la blockchain afin de valider une transaction ou de créer un bloc.
+        <br><br>
+        Voici comment Cardano répond au problème de scalabilité de la blockchain que rencontraient les deux premières générations.
+
+        <h1 class="article-paragraph">Intéroperabilité</h2>
+        L’idée d’intéroperabilité est la même que dans le monde actuel de la finance. Le constat est qu’une seule monnaie ne peut pas gouverner le monde. Il existe une multitude de cryptomonnaie différentes, et l’idée ici est de pouvoir utiliser n’importe quelle autre monnaie avec Cardano. Chaque technologie comme le Bitcoin, l’Ethereum ou le système bancaire actuel possède son propre réseau mais il n’existe pas de standard permettant de communiquer entre eux. Il existe des plateformes d’échange, ce sont celles qui sont utilisées au quotidien pour échanger des devises en cryptomonnaie mais elles concentrent les risques. Il faut aussi avouer que c’est contradictoire de promouvoir une technologie de décentralisation totale sur des plateformes aussi centralisées.
+        <br><br>
+        L’objectif est de pouvoir utiliser n’importe quelle monnaie avec Cardano, c’est-à- dire une manière de pouvoir « lié » les blockchain de réseaux différents. Pour respecter l’idée générale de la blockchain, ces échanges devraient se faire sans l’utilisation d’un tiers de confiance (plateformes d’échanges). Pour répondre à ce problème, Cardano introduit les chaînes latérales. Le concept de base est que lorsqu’une transaction est faite d’une blockchain à une seconde blockchain différente, les chaînes latérales doivent regrouper un ensemble d’informations compressées qui nous donnent l’aptitude de savoir si la transaction est légitime. La transaction doit respecter les mêmes règles de base que les transactions des blockchain de première génération.
+        <br><br>
+        À ce stade les blockchains pourraient communiquer entre elles mais il est pertinent de constater qu’il reste une barrière entre le réseau bancaire et le réseau Blockchain. Cette barrière existe seulement car il y a un besoin, côté réseau bancaire, de traçabilité des transactions. Qui envoie à qui et pourquoi? Pour y répondre, Cardano ajoute un système de métadonnée dans les transactions que l’utilisateur aura le choix d’inclure ou non. La finance pourra alors exiger qu’une transaction soit transparente.
+        <br><br>
+        Cardano fournit donc un alliage astucieux entre l’anonymat de la cryptomonnaie et la nécessité de traçabilité du monde de la finance.
+
+        <h1 class="article-paragraph">Durabilité</h2>
+          Pour que cette technologie soit durable dans le temps il est important de répondre à une question : Comment payer les choses?
+        <br><br>
+        En effet, il est nécessaire de développer un modèle économique permettant de créer une trésorerie afin de rémunérer les personnes contribuant à l’évolution de cette technologie. De cette manière elle pourra perdurer dans le temps.
+        <br><br>
+        Pour anticiper cela, Cardano a pour objectif de mettre en place un système de trésorerie de la manière suivante. Auparavant, les mineurs des cryptomonnaies recevaient une récompense lorsqu’un bloc était miné. Avec Cardano les mineurs reçoivent également une récompense, mais une partie de celle-ci est redirigée vers une trésorerie, vers un compte bancaire décentralisé.
+        <br><br>
+        Lorsqu’un utilisateur à un projet qui pourrait faire avancer la technologie il le soumet à la trésorerie, ensuite tous les détenteurs de jeton pourront alors voter. Si l’utilisateur reçoit un montant élevé de vote, la trésorerie lui débloquera une rémunération afin de développer son projet.
+        <br><br>
+        Ce modèle économique permet alors de faire évoluer la technologie de manière sur et durable dans le temps par la communauté elle même.
+
+        <h2 class="article-section">Conclusion</h2>
+        Le monde de la blockchain évolue de manière efficace mais pour l’instant les résultats sont encore trop immature. Popularisé en 2008, la technologie a déjà bien avancé par rapport au stade initiale mais elle est encore beaucoup trop marquée par des scandales, et des exploitations de bugs par des hackers.
+        <br><br>
+        Les blockchains de troisième génération proposent des solutions permettant de démocratiser cette technologie. Je pense que Cardano est à suivre car selon moi elle respecte entièrement la philosophie de la blockchain tout en répondant aux problème liés aux générations précédente. Néanmoins, il reste encore du chemin à parcourir car la technologie est encore très jeune et n’implémente pas encore tous ses objectifs.
+        <br><br>
+        Quelque soit l’issu de cette innovation, révolution totale ou flop, il est passionnant pour un jeune développeur comme moi de voir l’évolution en direct de cette technologie et ses impacts sur la société actuel.
+
+        <div class="share-buttons">
+          <table>
+            <tr>
+              <td>
+                <a class="twitter-share-button"
+                  href="https://twitter.com/share"
+                  data-size="large"
+                  data-text="Blockchain 3.0"
+                  data-url="https://oulasri.github.io/post/blockchain-14-03-2018.html"
+                  data-hashtags="blockchain, PoW, PoS, SmartContract"
+                  data-via="ROulasri"
+                  data-related="twitterapi,twitter">Tweet</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </td>
+              <td style="padding-bottom: 6px;">
+                <div class="fb-share-button" data-href="https://oulasri.github.io/post/blockchain-14-03-2018.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foulasri.github.io%2Fpost%2Felm-9-10-2017.html&amp;src=sdkpreparse">Share</a></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </div>
+
+    <footer class="footer">&copy; Rachid Oulasri 2017
+  		<a class="pull-right" href="https://twitter.com/ROulasri">@ROulasri</a>
+  	</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
