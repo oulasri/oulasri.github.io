@@ -113,3 +113,25 @@
   color: #dfdfdf;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+
+.prism {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+  padding: 8px;
+  border: 1px solid #e1e1e8;
+  position: relative;
+}
+
+.language-prism {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-left: 1px solid #e1e1e8;
+  border-bottom: 1px solid #e1e1e8;
+  border-bottom-left-radius:3px;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-top: 1px;
+  padding-right: 3px;
+  
+}
