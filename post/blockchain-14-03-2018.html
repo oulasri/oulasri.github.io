@@ -89,7 +89,7 @@
           <li><b>Chiffrer un message à envoyer</b> : imaginons Bob qui utilise la clé publique d'Alice afin de crypter un message. Alice va alors déchiffrer ce message à l’aide de sa clé privée qu’elle est la seule à détenir. Le message est alors totalement confidentiel et seul Alice pourra consulter le contenu de ce message.
           <img src="./image/publique-prive.jpeg" class="article-img" style="width:100%;" alt="schema chiffrage message cryptographie asymétrique blockchain"/></li>
           <li><b>S’assurer de l’authenticité de l’expéditeur</b> : le rôle des clés est interchangeable. Une clé privée peut aussi servir à chiffrer un message pour qu’une clé publique le déchiffre. Alice qui souhaite authentifier un message va utiliser sa clé privée pour crypter celui-ci et tous les détenteurs de la clé publique d’Alice peuvent valider qu’elle est bien l’auteur du message.
-          <img src="./image/prive-publique.jpeg" class="article-img" style="width:100%;" alt="schema authenticité message cryptographie asymétrique blockchain">/></li>
+          <img src="./image/prive-publique.jpeg" class="article-img" style="width:100%;" alt="schema authenticité message cryptographie asymétrique blockchain"/></li>
         </ul>
 
         Dans notre cas, afin d’éviter la possibilité qu’un même bitcoin soit attribué deux fois, la technologie Bitcoin va utiliser l’authenticité de l’expéditeur grâce à la cryptographie asymétrique. Si Alice veut devenir membre du réseau Bitcoin, elle va alors générer une clé privée et une clé publique. La clé privée va rester en sa possession et elle va diffuser la clé publique à tous les utilisateurs du réseau. Afin d’effectuer une transaction, elle va signer celle-ci avec sa clé privée. De cette manière, tous les utilisateurs du réseau sont sûrs que c’est Alice qui a créé cette transaction. Tant que Alice ne dévoile pas sa clé privée, elle sera la seule personne à pouvoir effectuer une transaction avec ses bitcoins. Maintenant que les transactions sont sécurisées, comment peut-on savoir que l’émetteur possède réellement le bitcoin à transférer ?
@@ -105,7 +105,7 @@
 
         <h1 class="article-paragraph">Le minage</h1>
           Le concept du minage est simple. Chaque bloc est identifié par une <b>clé de hachage</b>, et l’objectif des noeuds du réseau qui minent est de créer un identifiant (une clé de hachage) valide pour le nouveau bloc. Toutes les transactions en attente seront alors regroupées dans le nouveau bloc alors disponible dans la blockchain.
-        <img src="./image/minage.jpeg" class="article-img" style="width:100%;" alt="schema minage blockchain">/>
+        <img src="./image/minage.jpeg" class="article-img" style="width:100%;" alt="schema minage blockchain"/>
 
         Afin de trouver un identifiant valide, les noeuds du réseau font appel à une fonction de hachage. Grâce à cette fonction, les noeuds hachent l’identifiant du bloc précédent, les identifiants des transactions du bloc que l’on essaie de former et une chaîne de caractères aléatoires. Un noeud pourra créer le nouveau bloc si le hash qu’il vient de créer est valide; c’est-à-dire s’il comporte un grand nombre de zéro dans ses premiers chiffres. Le noeud met alors à jour la blockchain et propage cette dernière de proche en proche dans le réseau Peer-to-peer.
         <br><br>
