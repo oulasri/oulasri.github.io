@@ -70,7 +70,7 @@
         <br>
         C’est dans ce climat de méfiance que sont nées les cryptomonnaies. La première et de loin la plus célèbre est le Bitcoin. Elle a été créée en 2008 par un certain Satoshi Nakamoto et repose sur plusieurs principes. L’idée de base était de créer une monnaie d’échange entre utilisateurs en se passant des institutions bancaires afin de transférer des biens et des services de façon plus libre et indépendante. Néanmoins ce principe introduit plusieurs problématiques :
         <ul class="liste">
-          <li>L’échange d’argent se fait d’utilisateurs à utilisateurs,</li>
+          <li>L’échange d’argent se fait d’utilisateurs à utilisateurs,</li>
           <li>Il faut empêcher que l’on attribue deux fois le même bitcoin,</li>
           <li>Et il faut garantir que la monnaie se gère sans autorité supérieure et/ou centrale.</li>
         </ul>
@@ -85,12 +85,11 @@
         La cryptographie asymétrique est une méthode de chiffrement de message. Elle permet de générer mathématiquement deux nombres. Ces deux nombres sont appelés clé <b>privée</b> et clé <b>publique</b>. La clé publique peut être diffusée à quiconque souhaite chiffrer un message, mais la clé privée est gardée secrète. Ce système peut être utilisé pour :
 
         <br><br>
-        <ul class="liste" class="liste">
+        <ul class="liste">
           <li><b>Chiffrer un message à envoyer</b> : imaginons Bob qui utilise la clé publique d'Alice afin de crypter un message. Alice va alors déchiffrer ce message à l’aide de sa clé privée qu’elle est la seule à détenir. Le message est alors totalement confidentiel et seul Alice pourra consulter le contenu de ce message.
           <img src="./image/publique-prive.jpeg" class="article-img" style="width:100%;" alt="schema chiffrage message cryptographie asymétrique blockchain"/></li>
           <li><b>S’assurer de l’authenticité de l’expéditeur</b> : le rôle des clés est interchangeable. Une clé privée peut aussi servir à chiffrer un message pour qu’une clé publique le déchiffre. Alice qui souhaite authentifier un message va utiliser sa clé privée pour crypter celui-ci et tous les détenteurs de la clé publique d’Alice peuvent valider qu’elle est bien l’auteur du message.
           <img src="./image/prive-publique.jpeg" class="article-img" style="width:100%;" alt="schema authenticité message cryptographie asymétrique blockchain">/></li>
-          </li>
         </ul>
 
         Dans notre cas, afin d’éviter la possibilité qu’un même bitcoin soit attribué deux fois, la technologie Bitcoin va utiliser l’authenticité de l’expéditeur grâce à la cryptographie asymétrique. Si Alice veut devenir membre du réseau Bitcoin, elle va alors générer une clé privée et une clé publique. La clé privée va rester en sa possession et elle va diffuser la clé publique à tous les utilisateurs du réseau. Afin d’effectuer une transaction, elle va signer celle-ci avec sa clé privée. De cette manière, tous les utilisateurs du réseau sont sûrs que c’est Alice qui a créé cette transaction. Tant que Alice ne dévoile pas sa clé privée, elle sera la seule personne à pouvoir effectuer une transaction avec ses bitcoins. Maintenant que les transactions sont sécurisées, comment peut-on savoir que l’émetteur possède réellement le bitcoin à transférer ?
@@ -200,7 +199,7 @@
                   data-hashtags="blockchain, PoW, PoS, SmartContract"
                   data-via="ROulasri"
                   data-related="twitterapi,twitter">Tweet</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async src="https://platform.twitter.com/widgets.js"></script>
               </td>
               <td style="padding-bottom: 6px;">
                 <div class="fb-share-button" data-href="https://oulasri.github.io/post/blockchain-14-03-2018.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foulasri.github.io%2Fpost%2Felm-9-10-2017.html&amp;src=sdkpreparse">Share</a></div>
@@ -219,8 +218,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
       $('a[href^="#"]').click(function(){
       var the_id = $(this).attr("href");
       if (the_id === '#') {
