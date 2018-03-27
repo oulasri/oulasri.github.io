@@ -120,6 +120,7 @@
   padding: 8px;
   border: 1px solid #e1e1e8;
   position: relative;
+  z-index: -1;
 }
 
 .language-prism {
@@ -133,5 +134,8 @@
   padding-left: 3px;
   padding-top: 1px;
   padding-right: 3px;
-  
+}
+
+.liste {
+  margin-top: 20px;
 }

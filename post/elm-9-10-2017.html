@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Content-Type" content="UTF-8">
     <meta name="Content-Language" content="fr">
-    <meta name="Subject" content="developer">
-    <meta name="Copyright" content="rachid oulasri 2017">
+    <meta name="Subject" content="developpeur">
+    <meta name="Copyright" content="rachid oulasri 2018">
     <meta name="Author" content="rachid oulasri">
     <meta name="Identifier-Url" content="oulasri.github.io">
 
-    <meta property="og:title" content="Rachid Oulasri"/>
+    <meta property="og:title" content="Rachid Oulasri Elm"/>
     <meta property="og:Section" content="website"/>
     <meta property="og:url" content="https://oulasri.github.io/"/>
-    <meta property="og:site_name" content="Rachid&#39;s Blog"/>
-    <meta property="og:description" content="ELM - Article sur les expériences de dévelopement de Rachid Oulasri"/>
+    <meta property="og:site_name" content="Blog de Rachid Oulasri"/>
+    <meta property="og:description" content="Article sur les expériences de dévelopement de Rachid Oulasri"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../prism.css" />
@@ -81,9 +81,9 @@ lie = Lie
 var _userame$project$Example$lie = { ctor : 'Lie' }
 </code></pre>
 
-        <h1 class="article-paragraph">Programmation fonctionelle</h2>
+        <h1 class="article-paragraph">Programmation fonctionelle</h1>
         La programmation fonctionnelle est un style de programmation qui utilise comme concepts fondamentaux:
-        <ul>
+        <ul class="liste">
           <li>les notions de valeur,</li>
           <li>de fonction,</li>
           <li>l’application de ces fonctions à des valeurs</li>
@@ -92,19 +92,19 @@ var _userame$project$Example$lie = { ctor : 'Lie' }
         <br>
         <br>
         Effectivement, Elm est un langage qui se fonde sur les notions d’immutabilité. Ce concept vise à empêcher le changement d’état des variables dans l’exécution du programme, le contenu d’une variable ne peut pas être changé après son affectation. L’approche pure est un des fondements du paradigme de programmation fonctionnelle. Une fonction est pure lorsque le résultat ne dépend que de ses arguments et non d’un état externe. Par ailleurs, il n’a pas d’effet de bord, c’est-à-dire qu’elle retourne une valeur en sortie et ne change pas l’état d’une variable externe à la fonction.
-        <img src="./image/function.png" class="article-img"/>
+        <img src="./image/function.png" class="article-img" alt="schema fonction mathématique"/>
 
 
-        <h1 class="article-paragraph">Architecture Elm</h2>
+        <h1 class="article-paragraph">Architecture Elm</h1>
         Du fait de son architecture, Elm a été pensé pour <b>développer en front-end</b>. C’est pourquoi son concepteur propose une méthode pour <b>structurer son code</b>. Cette architecture s’approche du <b>modèle MVC</b> et propose :
-        <ul>
+        <ul class="liste">
           <li>un modèle qui contient l’état de l’application,</li>
           <li>une vue qui représente l’application en fonction de son modèle,</li>
           <li>une fonction d’update qui va réaliser les changements sur le modèle en fonction des messages qu’il reçoit (retour de l’utilisateur, API, serveur, etc.).</li>
         </ul>
-        <img src="./image/mvu.jpg" class="article-img" width="650"/>
+        <img src="./image/mvu.jpg" class="article-img" width="650" alt="image schema mvu"/>
 
-        <h1 class="article-paragraph">No runtime error</h2>
+        <h1 class="article-paragraph">No runtime error</h1>
         Grâce à ces différents aspects, le concepteur de ce langage <a href="https://twitter.com/czaplic" class="article-ref">Evan Czaplicki</a> a pu concevoir un compilateur qui fournit des messages d’une très grande qualité. En plus de nous décrire clairement le message d’erreur, le compilateur fera toujours de son mieux pour nous proposer une modification ou un lien pour nous aider à résoudre l’erreur. Mais le plus important, selon la documentation officielle, le compilateur Elm arrive à détecter les fragments susceptibles de fournir une erreur à l’exécution.
         <br>
         C’est donc le deuxième point qui est soulevé par le speaker. Ce langage est censé <b>éviter toute erreur à l’exécution</b> et fournir de plus <b>grandes performances</b>. Après l’avoir utilisé pendant plus d’un an en production, Paul Dijou nous fait un retour d’expérience sur cet aspect.
@@ -153,7 +153,7 @@ var _userame$project$Example$lie = { ctor : 'Lie' }
       </article>
     </div>
 
-    <footer class="footer">&copy; Rachid Oulasri 2017
+    <footer class="footer">&copy; Rachid Oulasri 2018
   		<a class="pull-right" href="https://twitter.com/ROulasri">@ROulasri</a>
   	</footer>
     <!-- Optional JavaScript -->
@@ -162,5 +162,18 @@ var _userame$project$Example$lie = { ctor : 'Lie' }
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $('a[href^="#"]').click(function(){
+      var the_id = $(this).attr("href");
+      if (the_id === '#') {
+        return;
+      }
+      $('html, body').animate({
+        scrollTop:$(the_id).offset().top
+      }, 'slow');
+      return false;
+      });
+    </script>
   </body>
 </html>
